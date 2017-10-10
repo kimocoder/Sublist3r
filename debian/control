@@ -1,0 +1,24 @@
+Source: sublist3r
+Section: misc
+Priority: optional
+Maintainer: Sophie Brun <sophie@freexian.com>
+Build-Depends: debhelper (>= 10), dh-python, python-all
+Standards-Version: 4.1.1
+Homepage: https://github.com/aboul3la/Sublist3r
+Vcs-Git: git://git.kali.org/packages/sublist3r.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/sublist3r.git;a=summary
+
+Package: sublist3r
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-dnspython, python-requests
+Description: Fast subdomains enumeration tool for penetration testers
+ This package contains a Python tool designed to enumerate subdomains of
+ websites using OSINT. It helps penetration testers and bug hunters collect and
+ gather subdomains for the domain they are targeting. Sublist3r enumerates
+ subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and
+ Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal,
+ ThreatCrowd, DNSdumpster, and ReverseDNS.
+ .
+ Subbrute was integrated with Sublist3r to increase the possibility of finding
+ more subdomains using bruteforce with an improved wordlist, thanks to TheRook,
+ author of subbrute.

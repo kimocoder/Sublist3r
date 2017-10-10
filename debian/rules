@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=sublist3r
+
+%:
+	dh $@ --with python2
+
+override_dh_install:
+	dh_install
+	mv debian/sublist3r/usr/share/sublist3r/sublist3r.py debian/sublist3r/usr/share/sublist3r/sublist3r
