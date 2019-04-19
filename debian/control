@@ -1,7 +1,7 @@
 Source: sublist3r
 Section: misc
 Priority: optional
-Maintainer: Sophie Brun <sophie@freexian.com>
+Maintainer: Kali Developers <devel@kali.org>
 Build-Depends: debhelper (>= 10), dh-python, python-all
 Standards-Version: 4.1.1
 Homepage: https://github.com/aboul3la/Sublist3r
