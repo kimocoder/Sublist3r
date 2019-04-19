@@ -5,8 +5,8 @@ Maintainer: Kali Developers <devel@kali.org>
 Build-Depends: debhelper (>= 10), dh-python, python-all
 Standards-Version: 4.1.1
 Homepage: https://github.com/aboul3la/Sublist3r
-Vcs-Git: git://git.kali.org/packages/sublist3r.git
-Vcs-Browser: http://git.kali.org/gitweb/?p=packages/sublist3r.git;a=summary
+Vcs-Git: https://gitlab.com/kalilinux/packages/sublist3r.git
+Vcs-Browser: https://gitlab.com/kalilinux/packages/sublist3r
 
 Package: sublist3r
 Architecture: all
