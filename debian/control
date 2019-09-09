@@ -2,7 +2,7 @@ Source: sublist3r
 Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
-Build-Depends: debhelper (>= 10), dh-python, python-all
+Build-Depends: debhelper (>= 10), dh-python, python3-all
 Standards-Version: 4.1.1
 Homepage: https://github.com/aboul3la/Sublist3r
 Vcs-Git: https://gitlab.com/kalilinux/packages/sublist3r.git
@@ -10,7 +10,7 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/sublist3r
 
 Package: sublist3r
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}, python-dnspython, python-requests
+Depends: ${python3:Depends}, ${misc:Depends}, python3-dnspython, python3-requests
 Description: Fast subdomains enumeration tool for penetration testers
  This package contains a Python tool designed to enumerate subdomains of
  websites using OSINT. It helps penetration testers and bug hunters collect and

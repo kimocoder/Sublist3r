@@ -4,7 +4,7 @@
 export PYBUILD_NAME=sublist3r
 
 %:
-	dh $@ --with python2
+	dh $@ --with python3
 
 override_dh_install:
 	dh_install
