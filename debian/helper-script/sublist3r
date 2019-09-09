@@ -2,4 +2,4 @@
 
 set -e
 
-/usr/share/sublist3r/sublist3r "$@"
+python3 /usr/lib/python3/dist-packages/sublist3r.py "$@"
