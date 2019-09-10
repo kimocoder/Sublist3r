@@ -1,0 +1,30 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Tue, 10 Sep 2019 11:13:56 +0200
+Subject: Update usage info
+
+Last-Update: 2019-09-10
+---
+ sublist3r.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/sublist3r.py b/sublist3r.py
+index 109dacd..e808fb8 100755
+--- a/sublist3r.py
++++ b/sublist3r.py
+@@ -81,14 +81,14 @@ def banner():
+ 
+ def parser_error(errmsg):
+     banner()
+-    print("Usage: python " + sys.argv[0] + " [Options] use -h for help")
++    print("Usage: python3 " + sys.argv[0] + " [Options] use -h for help")
+     print(R + "Error: " + errmsg + W)
+     sys.exit()
+ 
+ 
+ def parse_args():
+     # parse the arguments
+-    parser = argparse.ArgumentParser(epilog='\tExample: \r\npython ' + sys.argv[0] + " -d google.com")
++    parser = argparse.ArgumentParser(epilog='\tExample: \r\npython3 ' + sys.argv[0] + " -d google.com")
+     parser.error = parser_error
+     parser._optionals.title = "OPTIONS"
+     parser.add_argument('-d', '--domain', help="Domain name to enumerate it's subdomains", required=True)
