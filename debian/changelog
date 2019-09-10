@@ -1,3 +1,21 @@
+sublist3r (1.0+git20181015-0kali1) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Update Maintainer field
+  * Update Vcs-* fields for the move to gitlab.com
+  * Add GitLab's CI configuration file
+  * Configure git-buildpackage for Kali
+  * Update URL in GitLab's CI configuration file
+
+  [ Sophie Brun ]
+  * New upstream version 1.0+git20181015
+  * Switch to Python 3
+  * Update packaging for new release (use setup.py)
+  * Bump Standards-Version to 4.4.0
+  * Add a patch to update usage information
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 09 Sep 2019 16:06:45 +0200
+
 sublist3r (1.0+git20170719-0kali1) kali-dev; urgency=medium
 
   * Initial release (Closes 1964)
