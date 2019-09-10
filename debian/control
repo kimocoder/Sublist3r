@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
 Build-Depends: debhelper (>= 10), dh-python, python3-all, python3-setuptools
-Standards-Version: 4.1.1
+Standards-Version: 4.4.0
 Homepage: https://github.com/aboul3la/Sublist3r
 Vcs-Git: https://gitlab.com/kalilinux/packages/sublist3r.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/sublist3r
