@@ -66,6 +66,10 @@ else:
     R = '\033[91m'  # red
     W = '\033[0m'   # white
 
+def no_color():
+    global G, Y, B, R, W
+    G = Y = B = R = W = ''
+
 
 def banner():
     print("""%s
@@ -98,6 +102,7 @@ def parse_args():
     parser.add_argument('-t', '--threads', help='Number of threads to use for subbrute bruteforce', type=int, default=30)
     parser.add_argument('-e', '--engines', help='Specify a comma-separated list of search engines')
     parser.add_argument('-o', '--output', help='Save the results to text file')
+    parser.add_argument('-n', '--no-color', help='Output without color', default=False, action='store_true')
     return parser.parse_args()
 
 
@@ -631,7 +636,7 @@ class DNSdumpster(enumratorBaseThreaded):
         return self.get_response(resp)
 
     def get_csrftoken(self, resp):
-        csrf_regex = re.compile("<input type='hidden' name='csrfmiddlewaretoken' value='(.*?)' />", re.S)
+        csrf_regex = re.compile('<input type="hidden" name="csrfmiddlewaretoken" value="(.*?)">', re.S)
         token = csrf_regex.findall(resp)[0]
         return token.strip()
 
@@ -669,11 +674,12 @@ class DNSdumpster(enumratorBaseThreaded):
 class Virustotal(enumratorBaseThreaded):
     def __init__(self, domain, subdomains=None, q=None, silent=False, verbose=True):
         subdomains = subdomains or []
-        base_url = 'https://www.virustotal.com/en/domain/{domain}/information/'
+        base_url = 'https://www.virustotal.com/ui/domains/{domain}/subdomains'
         self.engine_name = "Virustotal"
         self.lock = threading.Lock()
         self.q = q
         super(Virustotal, self).__init__(base_url, self.engine_name, domain, subdomains, q=q, silent=silent, verbose=verbose)
+        self.url = self.base_url.format(domain=self.domain)
         return
 
     # the main send_req need to be rewritten
@@ -688,23 +694,31 @@ class Virustotal(enumratorBaseThreaded):
 
     # once the send_req is rewritten we don't need to call this function, the stock one should be ok
     def enumerate(self):
-        url = self.base_url.format(domain=self.domain)
-        resp = self.send_req(url)
-        self.extract_domains(resp)
+        while self.url != '':
+            resp = self.send_req(self.url)
+            resp = json.loads(resp)
+            if 'error' in resp:
+                self.print_(R + "[!] Error: Virustotal probably now is blocking our requests" + W)
+                break
+            if 'links' in resp and 'next' in resp['links']:
+                self.url = resp['links']['next']
+            else:
+                self.url = ''
+            self.extract_domains(resp)
         return self.subdomains
 
     def extract_domains(self, resp):
-        link_regx = re.compile('<div class="enum.*?">.*?<a target="_blank" href=".*?">(.*?)</a>', re.S)
+        #resp is already parsed as json
         try:
-            links = link_regx.findall(resp)
-            for link in links:
-                subdomain = link.strip()
-                if not subdomain.endswith(self.domain):
-                    continue
-                if subdomain not in self.subdomains and subdomain != self.domain:
-                    if self.verbose:
-                        self.print_("%s%s: %s%s" % (R, self.engine_name, W, subdomain))
-                    self.subdomains.append(subdomain.strip())
+            for i in resp['data']:
+                if i['type'] == 'domain':
+                    subdomain = i['id']
+                    if not subdomain.endswith(self.domain):
+                        continue
+                    if subdomain not in self.subdomains and subdomain != self.domain:
+                        if self.verbose:
+                            self.print_("%s%s: %s%s" % (R, self.engine_name, W, subdomain))
+                        self.subdomains.append(subdomain.strip())
         except Exception:
             pass
 
@@ -978,6 +992,8 @@ def interactive():
     engines = args.engines
     if verbose or verbose is None:
         verbose = True
+    if args.no_color:
+        no_color()
     banner()
     res = main(domain, threads, savefile, ports, silent=False, verbose=verbose, enable_bruteforce=enable_bruteforce, engines=engines)
 
