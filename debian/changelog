@@ -1,3 +1,13 @@
+sublist3r (1.0+git20200105-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 1.0+git20200105
+  * Use debhelper-compat 12
+  * Bump Standards-Version to 4.5.0
+  * Refresh patch
+  * Add missing info in autopkgtest
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 11 Mar 2020 11:54:32 +0100
+
 sublist3r (1.0+git20181015-0kali1) kali-dev; urgency=medium
 
   [ Raphaël Hertzog ]
