@@ -8,10 +8,10 @@ Last-Update: 2019-09-10
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/sublist3r.py b/sublist3r.py
-index 109dacd..e808fb8 100755
+index 4d716dd..18f78f3 100755
 --- a/sublist3r.py
 +++ b/sublist3r.py
-@@ -81,14 +81,14 @@ def banner():
+@@ -85,14 +85,14 @@ def banner():
  
  def parser_error(errmsg):
      banner()
