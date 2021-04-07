@@ -1,3 +1,6 @@
+sublist3r (1.1-0kali1) UNRELEASED; urgency=low
+ -- Kali Janitor <janitor@kali.org>  Wed, 07 Apr 2021 13:40:28 -0000
+
 sublist3r (1.0+git20200105-0kali1) kali-dev; urgency=medium
 
   * New upstream version 1.0+git20200105
