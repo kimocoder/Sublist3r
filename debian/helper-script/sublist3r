@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 set -e
 
-python3 /usr/lib/python3/dist-packages/sublist3r.py "$@"
+exec python3 /usr/lib/python3/dist-packages/sublist3r.py "$@"
