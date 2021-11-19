@@ -2,6 +2,7 @@ Source: sublist3r
 Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
+Uploaders: Sophie Brun <sophie@offensive-security.com>,
 Build-Depends: debhelper-compat (= 12),
                dh-python,
                python3-all,
