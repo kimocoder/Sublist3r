@@ -1,3 +1,9 @@
+sublist3r (1.1-1) experimental; urgency=medium
+
+  * Initial release for Debian. (Closes: #1016995)
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Thu, 11 Aug 2022 17:01:49 -0300
+
 sublist3r (1.1-0kali1) kali-dev; urgency=medium
 
   * New upstream version 1.1
