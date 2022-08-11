@@ -8,6 +8,8 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Set new maintainer and co-maintainer when introducing in Debian.
       - Updated Vcs-* fields with Debian Security Tools Team Salsa.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
+  * debian/watch: updated the search rule to make it compliant with new GitHub
+    rules.
 
  -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Thu, 11 Aug 2022 17:01:49 -0300
 
