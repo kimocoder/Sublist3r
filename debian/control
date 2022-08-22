@@ -10,8 +10,8 @@ Build-Depends: debhelper-compat (= 13),
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://github.com/aboul3la/Sublist3r
-Vcs-Git: https://gitlab.com/kalilinux/packages/sublist3r.git
-Vcs-Browser: https://gitlab.com/kalilinux/packages/sublist3r
+Vcs-Browser: https://salsa.debian.org/pkg-security-team/sublist3r
+Vcs-Git: https://salsa.debian.org/pkg-security-team/sublist3r.git
 
 Package: sublist3r
 Architecture: all
