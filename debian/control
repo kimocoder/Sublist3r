@@ -1,8 +1,8 @@
 Source: sublist3r
 Section: misc
 Priority: optional
-Maintainer: Kali Developers <devel@kali.org>
-Uploaders: Sophie Brun <sophie@offensive-security.com>,
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Uploaders: Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>
 Build-Depends: debhelper-compat (= 13),
                dh-python,
                python3-all,
