@@ -9,6 +9,7 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Updated Vcs-* fields with Debian Security Tools Team Salsa.
   * debian/gbp.conf: modified to comply with pkg-security team GBP
     configuration.
+  * debian/helper-script: removed for not being used anymore.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
   * debian/sublist3r.docs: renamed to docs.
