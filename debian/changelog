@@ -7,6 +7,7 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Bumped Standards-Version to 4.6.1.
       - Set new maintainer and co-maintainer when introducing in Debian.
       - Updated Vcs-* fields with Debian Security Tools Team Salsa.
+  * debian/copyright: added 'Upstream-Contact' field.
   * debian/gbp.conf: modified to comply with pkg-security team GBP
     configuration.
   * debian/helper-script: removed for not being used anymore.

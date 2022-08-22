@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Sublist3r
 Source: https://github.com/aboul3la/Sublist3r
+Upstream-Contact: https://github.com/aboul3la/Sublist3r/issues
 
 Files: *
 Copyright: Ahmed Aboul-Ela
