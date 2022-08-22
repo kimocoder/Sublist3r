@@ -1,6 +1,7 @@
 sublist3r (1.1-1) experimental; urgency=medium
 
   * Initial release for Debian. (Closes: #1016995)
+  * debian/control: bumped Standards-Version to 4.6.1.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
 
  -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Thu, 11 Aug 2022 17:01:49 -0300
