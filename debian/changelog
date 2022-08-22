@@ -7,6 +7,8 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Bumped Standards-Version to 4.6.1.
       - Set new maintainer and co-maintainer when introducing in Debian.
       - Updated Vcs-* fields with Debian Security Tools Team Salsa.
+  * debian/gbp.conf: modified to comply with pkg-security team GBP
+    configuration.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
   * debian/watch: updated the search rule to make it compliant with new GitHub
     rules.
