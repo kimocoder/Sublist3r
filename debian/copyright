@@ -4,16 +4,19 @@ Source: https://github.com/aboul3la/Sublist3r
 Upstream-Contact: https://github.com/aboul3la/Sublist3r/issues
 
 Files: *
-Copyright: Ahmed Aboul-Ela
+Copyright: 2015-2020 Ahmed Aboul-Ela <ahmed.aboul3la@gmail.com>
+License: GPL-2
+
+Files: debian/*
+Copyright: 2017-2021 Sophie Brun <sophie@offensive-security.com>
+           2019      Raphaël Hertzog <hertzog@debian.org>
+           2022      Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>
 License: GPL-2+
 
-Files: subbrute/*
-Copyright: rook
-License: GPL-3+
+License: GPL-2
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 3 of the License, or
- (at your option) any later version.
+ the Free Software Foundation; version 2 of the License.
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -22,13 +25,9 @@ License: GPL-3+
  .
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <https://www.gnu.org/licenses/>
- .
+Comment:
  On Debian systems, the complete text of the GNU General
- Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
-Files: debian/*
-Copyright: 2017 Sophie Brun <sophie@offensive-security.com>
-License: GPL-2+
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
@@ -43,6 +42,6 @@ License: GPL-2+
  .
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <https://www.gnu.org/licenses/>
- .
+Comment:
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
