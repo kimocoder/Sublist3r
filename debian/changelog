@@ -18,6 +18,11 @@ sublist3r (1.1-1) experimental; urgency=medium
   * debian/helper-script: removed for not being used anymore.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
   * debian/lintian-overrides: created to override a false positive.
+  * debian/manpage/:
+      - create-man.sh: created to make the manpage from the .txt source file.
+      - sublist3r.txt: created to provide the source to the manpage.
+      - sublist3r.1: manpage created using create-man.sh.
+  * debian/manpages: added to install the manpage.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
   * debian/sublist3r.docs: renamed to docs.
   * debian/sublist3r.install: removed because not used after deleting the
