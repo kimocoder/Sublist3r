@@ -8,6 +8,7 @@ Build-Depends: debhelper-compat (= 13),
                python3-all,
                python3-setuptools
 Standards-Version: 4.6.1
+Rules-Requires-Root: no
 Homepage: https://github.com/aboul3la/Sublist3r
 Vcs-Git: https://gitlab.com/kalilinux/packages/sublist3r.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/sublist3r

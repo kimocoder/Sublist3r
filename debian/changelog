@@ -2,6 +2,7 @@ sublist3r (1.1-1) experimental; urgency=medium
 
   * Initial release for Debian. (Closes: #1016995)
   * debian/control:
+      - Added 'Rules-Requires-Root: no' to source stanza.
       - Bumped DH level to 13.
       - Bumped Standards-Version to 4.6.1.
       - Set new maintainer and co-maintainer when introducing in Debian.
