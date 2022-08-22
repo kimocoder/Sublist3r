@@ -17,6 +17,7 @@ sublist3r (1.1-1) experimental; urgency=medium
     configuration.
   * debian/helper-script: removed for not being used anymore.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
+  * debian/lintian-overrides: created to override a false positive.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
   * debian/sublist3r.docs: renamed to docs.
   * debian/sublist3r.install: removed because not used after deleting the
