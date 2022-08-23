@@ -13,17 +13,15 @@
 .fam T
 .fi
 .SH DESCRIPTION
-Fast subdomains enumeration tool for penetration testers
-This package contains a Python tool designed to enumerate subdomains of
-websites using OSINT. It helps penetration testers and bug hunters collect and
-gather subdomains for the domain they are targeting. Sublist3r enumerates
-subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and
-Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal,
-ThreatCrowd, DNSdumpster, and ReverseDNS.
+This package contains a Python security tool designed to enumerate subdomains
+of websites using OSINT. It helps penetration testers and bug hunters collect
+and gather subdomains for the domain they are targeting over the network.
+Sublist3r enumerates subdomains using many search engines such as Google,
+Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using
+Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 .PP
 Subbrute was integrated with Sublist3r to increase the possibility of finding
-more subdomains using bruteforce with an improved wordlist, thanks to TheRook,
-author of subbrute.
+more subdomains using bruteforce with an improved wordlist.
 .SH OPTIONS
 .TP
 .B
@@ -40,11 +38,11 @@ Enable the subbrute bruteforce module
 .TP
 .B
 \fB-p\fP PORTS, \fB--ports\fP PORTS
-Scan the found subdomains against specified tcp ports
+Scan the found subdomains against specified TCP ports
 .TP
 .B
 \fB-v\fP [VERBOSE], \fB--verbose\fP [VERBOSE]
-Enable Verbosity and display results in realtime
+Enable verbosity and display results in realtime
 .TP
 .B
 \fB-t\fP THREADS, \fB--threads\fP THREADS

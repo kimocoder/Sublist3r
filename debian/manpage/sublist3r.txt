@@ -5,24 +5,22 @@ SYNOPSIS
   sublist3r [ARGS] ...
 
 DESCRIPTION
-  Fast subdomains enumeration tool for penetration testers
-  This package contains a Python tool designed to enumerate subdomains of
-  websites using OSINT. It helps penetration testers and bug hunters collect and
-  gather subdomains for the domain they are targeting. Sublist3r enumerates
-  subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and
-  Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal,
-  ThreatCrowd, DNSdumpster, and ReverseDNS.
+  This package contains a Python security tool designed to enumerate subdomains
+  of websites using OSINT. It helps penetration testers and bug hunters collect
+  and gather subdomains for the domain they are targeting over the network.
+  Sublist3r enumerates subdomains using many search engines such as Google,
+  Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using
+  Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
   Subbrute was integrated with Sublist3r to increase the possibility of finding
-  more subdomains using bruteforce with an improved wordlist, thanks to TheRook,
-  author of subbrute.
+  more subdomains using bruteforce with an improved wordlist.
 
 OPTIONS
   -h, --help                                  Show this help message and exit
   -d DOMAIN, --domain DOMAIN                  Domain name to enumerate it's subdomains
   -b [BRUTEFORCE], --bruteforce [BRUTEFORCE]  Enable the subbrute bruteforce module
-  -p PORTS, --ports PORTS                     Scan the found subdomains against specified tcp ports
-  -v [VERBOSE], --verbose [VERBOSE]           Enable Verbosity and display results in realtime
+  -p PORTS, --ports PORTS                     Scan the found subdomains against specified TCP ports
+  -v [VERBOSE], --verbose [VERBOSE]           Enable verbosity and display results in realtime
   -t THREADS, --threads THREADS               Number of threads to use for subbrute bruteforce
   -e ENGINES, --engines ENGINES               Specify a comma-separated list of search engines
   -o OUTPUT, --output OUTPUT                  Save the results to text file
