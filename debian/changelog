@@ -1,6 +1,8 @@
 sublist3r (1.1-1) experimental; urgency=medium
 
   * Initial release for Debian. (Closes: #1016995)
+  * debian/clean: created to remove files generated during build in
+    'Sublist3r.egg-info' directory.
   * debian/control:
       - Added 'Rules-Requires-Root: no' to source stanza.
       - Bumped DH level to 13.
@@ -29,6 +31,8 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Added a header to patch.
       - Renamed to 010_update-usage-info.patch.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
+  * debian/source/options: removed in favor of a more accurate control via
+    'clean' file.
   * debian/sublist3r.docs: renamed to docs.
   * debian/sublist3r.install: removed because not used after deleting the
     helper-script file.
