@@ -10,6 +10,7 @@ sublist3r (1.1-1) experimental; urgency=medium
   * debian/gbp.conf: modified to comply with pkg-security team GBP
     configuration.
   * debian/kali-ci.yml: removed because is specific for GitLab in Kali.
+  * debian/sublist3r.docs: renamed to docs.
   * debian/upstream/metadata: added fields 'Repository' and
     'Repository-Browse'.
   * debian/watch: updated the search rule to make it compliant with new GitHub
