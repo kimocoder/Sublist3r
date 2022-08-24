@@ -31,6 +31,8 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Added a header to patch.
       - Renamed to 010_update-usage-info.patch.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
+  * debian/source/lintian-overrides: created to override maintainer-manual-page
+    lintian.
   * debian/source/options: removed in favor of a more accurate control via
     'clean' file.
   * debian/sublist3r.docs: renamed to docs.
