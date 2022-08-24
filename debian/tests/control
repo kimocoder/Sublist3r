@@ -1,3 +1,15 @@
 Test-Command: sublist3r -h
 Depends: @
 Restrictions: superficial
+
+Test-Command: sublist3r -d debian.org || exit 77
+Restrictions: allow-stderr, needs-internet, skippable
+
+Test-Command: sublist3r -d debian.org -p 80,443 || exit 77
+Restrictions: allow-stderr, needs-internet, skippable
+
+Test-Command: sublist3r -v -d debian.org || exit 77
+Restrictions: allow-stderr, needs-internet, skippable
+
+Test-Command: sublist3r -e yahoo -d debian.org || exit 77
+Restrictions: allow-stderr, needs-internet, skippable
