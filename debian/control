@@ -20,13 +20,12 @@ Depends: python3-dnspython,
          ${misc:Depends},
          ${python3:Depends}
 Description: Fast subdomains enumeration tool for penetration testers
- This package contains a Python tool designed to enumerate subdomains of
- websites using OSINT. It helps penetration testers and bug hunters collect and
- gather subdomains for the domain they are targeting. Sublist3r enumerates
- subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and
- Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal,
- ThreatCrowd, DNSdumpster, and ReverseDNS.
+ This package contains a Python security tool designed to enumerate subdomains
+ of websites using OSINT. It helps penetration testers and bug hunters collect
+ and gather subdomains for the domain they are targeting over the network.
+ Sublist3r enumerates subdomains using many search engines such as Google,
+ Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using
+ Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
  .
  Subbrute was integrated with Sublist3r to increase the possibility of finding
- more subdomains using bruteforce with an improved wordlist, thanks to TheRook,
- author of subbrute.
+ more subdomains using bruteforce with an improved wordlist.
