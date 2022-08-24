@@ -1,5 +1,5 @@
 Source: sublist3r
-Section: misc
+Section: net
 Priority: optional
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Uploaders: Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>

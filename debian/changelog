@@ -6,6 +6,7 @@ sublist3r (1.1-1) experimental; urgency=medium
       - Bumped DH level to 13.
       - Bumped Standards-Version to 4.6.1.
       - Set new maintainer and co-maintainer when introducing in Debian.
+      - Updated 'Section' field value to 'net'.
       - Updated Vcs-* fields with Debian Security Tools Team Salsa.
   * debian/copyright:
       - Added 'Upstream-Contact' field.
