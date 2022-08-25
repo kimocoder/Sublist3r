@@ -30,6 +30,7 @@ sublist3r (1.1-1) experimental; urgency=medium
   * debian/patches/udpate-usage-info.patch:
       - Added a header to patch.
       - Renamed to 010_update-usage-info.patch.
+  * debian/rules: removed not need line with comment.
   * debian/salsa-ci.yml: created to provide CI tests for Salsa.
   * debian/source/lintian-overrides: created to override maintainer-manual-page
     lintian.
