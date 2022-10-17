@@ -1,2 +1,2 @@
 version=4
-https://github.com/aboul3la/Sublist3r/releases .*/tags/v?(\d\S+)@ARCHIVE_EXT@
+https://github.com/aboul3la/Sublist3r/tags .*/tags/v?(\d\S+)@ARCHIVE_EXT@
