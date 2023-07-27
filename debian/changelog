@@ -1,6 +1,6 @@
 sublist3r (1.1-4) unstable; urgency=medium
 
-  *
+  * debian/control: bumped Standards-Version to 4.6.2.
 
  -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Thu, 27 Jul 2023 09:24:29 -0300
 

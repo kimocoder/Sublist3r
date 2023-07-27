@@ -7,7 +7,7 @@ Build-Depends: debhelper-compat (= 13),
                dh-python,
                python3-all,
                python3-setuptools
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://github.com/aboul3la/Sublist3r
 Vcs-Browser: https://salsa.debian.org/pkg-security-team/sublist3r
