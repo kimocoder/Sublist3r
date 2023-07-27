@@ -10,7 +10,7 @@ License: GPL-2
 Files: debian/*
 Copyright: 2017-2021 Sophie Brun <sophie@offensive-security.com>
            2019      Raphaël Hertzog <hertzog@debian.org>
-           2022      Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>
+           2022-2023 Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>
 License: GPL-2+
 
 Files: debian/manpage/create-man.sh
