@@ -19,8 +19,8 @@ git clone https://github.com/aboul3la/Sublist3r.git
 
 Sublist3r currently supports **Python 2** and **Python 3**.
 
-* The recommended version for Python 2 is **2.7.x**
-* The recommended version for Python 3 is **3.4.x**
+* The recommended version for Python 2 is **2.7.x and above**
+* The recommended version for Python 3 is **3.11.x and above**
 
 ## Dependencies:
 
@@ -180,4 +180,4 @@ Sublist3r is licensed under the GNU GPL license. take a look at the [LICENSE](ht
 * Special Thanks to [Ibrahim Mosaad](https://twitter.com/ibrahim_mosaad) for his great contributions that helped in improving the tool.
 
 ## Version
-**Current version is 1.0**
+**Current version is 1.2**
